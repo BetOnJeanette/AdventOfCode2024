@@ -10,14 +10,10 @@ function pairItems(leftSide: number[], rightSide: number[]){
     })
 }
 
-function getDif(pair: number[]){
-    return pair[0] - pair[1];
-}
-
 function solveProblem(leftList: number[], rightList: number[]){
     sortLists(leftList, rightList);
     const pairedItems = pairItems(leftList, rightList);
-    return pairedItems.reduce((acc, currentItem) => acc + getDif(currentItem), 0);
+    return pairedItems.reduce((acc, currentItem) => acc + currentItem[0] - currentItem[1], 0);
 }
 
 export { solveProblem };
