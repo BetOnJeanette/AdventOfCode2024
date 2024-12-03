@@ -15,5 +15,7 @@ func main() {
     check(err)    
     input := string(dat)
     part1 := solvePartOne(input)
+    part2 := solvePart2(input)
     println(part1)
+    println(part2)
 }
