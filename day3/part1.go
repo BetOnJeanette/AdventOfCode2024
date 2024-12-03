@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"regexp"
 	"strconv"
 	"strings"
@@ -9,7 +8,6 @@ import (
 
 func getMult(multStr string) int {
     numericSec := multStr[4:len(multStr) - 1]
-    fmt.Println(multStr, numericSec)
     numStrs := strings.Split(numericSec, ",")
     out := 1
     for _, element := range numStrs {
