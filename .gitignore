@@ -3,3 +3,6 @@ package-lock.json
 */target/*
 */Cargo.lock
 */input.txt
+
+*/bin/*
+*/obj/*
