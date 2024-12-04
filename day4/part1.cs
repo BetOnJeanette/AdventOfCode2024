@@ -1,4 +1,3 @@
-using System.Linq;
 namespace Day4;
 
 public static class Part1Solver {
@@ -41,13 +40,12 @@ public static class Part1Solver {
         return output;
     }
     
-    public static int GetSol(string input) {
+    public static int GetSol(string[] wordGrid) {
         int output = 0;
-        string[] sepLines = input.Split("\n").Where(item => item.Length > 0).ToArray();
-        for (int line = 0; line < sepLines.Length; line++){
-            for (int charIdx = 0; charIdx < sepLines[line].Length; charIdx++){
-                if (sepLines[line][charIdx] != SEARCHING_WORD[0]) continue;
-                output += TestAllDirections(sepLines, line, charIdx); 
+        for (int line = 0; line < wordGrid.Length; line++){
+            for (int charIdx = 0; charIdx < wordGrid[line].Length; charIdx++){
+                if (wordGrid[line][charIdx] != SEARCHING_WORD[0]) continue;
+                output += TestAllDirections(wordGrid, line, charIdx); 
             }
         }
 

@@ -6,7 +6,8 @@ class Program {
         using (StreamReader reader = new StreamReader("input.txt")){
             fileContents = reader.ReadToEnd();
         }
-        int sol1 = Part1Solver.GetSol(fileContents);
+        string[] wordGrid = fileContents.Split("\n").Where(line => line.Length > 0).ToArray();
+        int sol1 = Part1Solver.GetSol(wordGrid);
         Console.WriteLine($"Part 1: {sol1}");
     }
 }
