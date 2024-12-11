@@ -6,3 +6,7 @@ package-lock.json
 
 */bin/*
 */obj/*
+
+*/dist-newstyle/*
+day5/cabal.project.local
+day5/CHANGELOG.md
