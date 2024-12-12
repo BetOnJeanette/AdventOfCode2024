@@ -12,3 +12,5 @@ day5/cabal.project.local
 day5/CHANGELOG.md
 
 *.out
+
+*.class
