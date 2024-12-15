@@ -9,5 +9,7 @@ fun main(){
     val splitLines = fileContents.split("\n").filter{line -> line.length > 0};
     val bounds = Pair(splitLines.size, splitLines[0].length);
     val part1 = part1.solvePart1(splitLines, bounds);
-    print(part1);
+    val part2 = part2.solvePart2(splitLines, bounds);
+    println(part1);
+    println(part2);
 }
