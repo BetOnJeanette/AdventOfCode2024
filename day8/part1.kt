@@ -32,10 +32,6 @@ fun getAntiNodeFromPair(posA: Pair<Int, Int>, posB: Pair<Int, Int>): Pair<Int, I
     val vertDist = posA.first - posB.first;
     val horzDist = posA.second - posB.second;
     val outPair = Pair(posB.first - vertDist, posB.second - horzDist); 
-    print(posA)
-    print(posB)
-    print(outPair)
-    print("\n")
     return outPair;
 }
 
